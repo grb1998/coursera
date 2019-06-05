@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  
+  width: 400px;
+  padding: 30px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+  margin-top: 50px;
+  margin-left: 40px;
+
+  }
+  h1{
+    text-align: center;
+  }
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.column2{
+	width:70px;
+  padding: 5px;
+  height: 30px;
+  float: right;
+  margin: 10px;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+
+<h1>Our Menu</h1>
+
+<div class="row">
+
+  <div class="column" style="background-color:#636060">
+    <div class="column2" style="background-color: #d67575">
+      <span>Chicken</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="column" style="background-color:#636060">
+    <div class="column2" style="background-color: #D4380A">
+      <span>Beef</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="column" style="background-color:#636060">
+    <div class="column2" style="background-color: #e2dc24">
+      <span>Sushi</span>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div>
+
+</body>
+</html>
